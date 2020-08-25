@@ -80,10 +80,6 @@ namespace Lab
         }
 
 
-
-
-
-
         //takes in product from above and allows the user to divide the product by thier coice of input
         static decimal GetQuotient(int product)
         {

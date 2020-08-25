@@ -1,1 +1,2 @@
 # Lab:01a Exception handling and debugging 
+In todays lab we did practice with moving around data and setting up classes and methods and worked with debugging. We took user input and moved it around and manipulated it through out the program.

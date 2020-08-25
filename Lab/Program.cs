@@ -8,6 +8,7 @@ namespace Lab
             StartSequence();
             Console.WriteLine("Program is Complete");
         }
+
         static void StartSequence()
         {
             Console.WriteLine("Enter a number greater than zero.");

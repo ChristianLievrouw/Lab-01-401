@@ -11,7 +11,9 @@ namespace Lab
 
         static void StartSequence()
         {
+            // Starts by getting a number for the length of the array
             Console.WriteLine("Enter a number greater than zero.");
+
             string input = Console.ReadLine();
             int inputNum = Convert.ToInt32(input);
             int[] array = new int[inputNum];
@@ -29,6 +31,7 @@ namespace Lab
             Console.WriteLine($"{product} / {divisor} = {quotient}");
         }
 
+        // the array is now x length and as the loop goes over the full length of x it prompts the user to add a number between 1-10 and sets that value in the currant position
         static int[] Populate(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
@@ -41,6 +44,7 @@ namespace Lab
             return array;
         }
 
+        //adds up all positions in the previous array and checks to see if it is under 20 for total sum
         static int GetSum(int[] array)
         {
             int sum = 0;
@@ -55,6 +59,7 @@ namespace Lab
             return sum;
         }
 
+        //then asks a user to enter a number and creats a product from the length of the array -1 * the returned sum
         static int GetProduct(int[] array, int sum, int x)
         {
             Console.WriteLine($"Select a number between 1 and {x - 1}.");
@@ -74,6 +79,12 @@ namespace Lab
             return product;
         }
 
+
+
+
+
+
+        //takes in product from above and allows the user to divide the product by thier coice of input
         static decimal GetQuotient(int product)
         {
             Console.WriteLine($"Enter a number to divide {product} by.");
